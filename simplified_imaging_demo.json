@@ -18,14 +18,14 @@
       "x": 471,
       "y": -92,
       "data": {
-        "question": "Hardware or software write blocker"
+        "question": "Hardware or software write blocker approach?"
       }
     },
     {
       "id": "jbrm6H94",
       "type": "technique",
-      "x": 624,
-      "y": 107,
+      "x": 617,
+      "y": 180,
       "data": {
         "techniqueId": "DFT-1013"
       }
@@ -33,8 +33,8 @@
     {
       "id": "lLXiVLI8",
       "type": "technique",
-      "x": 422,
-      "y": 316,
+      "x": 424,
+      "y": 361,
       "data": {
         "techniqueId": "DFT-1002"
       }
@@ -56,6 +56,15 @@
       "data": {
         "techniqueId": "DFT-1112"
       }
+    },
+    {
+      "id": "ePPlidGa",
+      "type": "technique",
+      "x": 624,
+      "y": 51,
+      "data": {
+        "techniqueId": "DFT-1166"
+      }
     }
   ],
   "edges": [
@@ -66,14 +75,6 @@
       "sourceHandle": "left-s",
       "targetHandle": "top-t",
       "label": "Hardware"
-    },
-    {
-      "id": "ucKGLhu4",
-      "source": "QwPjHJ5d",
-      "target": "jbrm6H94",
-      "sourceHandle": "right-s",
-      "targetHandle": "top-t",
-      "label": "Software"
     },
     {
       "id": "isrzwPIO",
@@ -102,12 +103,27 @@
       "target": "m9QtSmR3",
       "sourceHandle": "bottom-s",
       "targetHandle": "top-t"
+    },
+    {
+      "id": "9nrw5WS1",
+      "source": "QwPjHJ5d",
+      "target": "ePPlidGa",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t",
+      "label": "Software"
+    },
+    {
+      "id": "ldm87oBP",
+      "source": "ePPlidGa",
+      "target": "jbrm6H94",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
     }
   ],
   "selections": {},
   "viewport": {
-    "x": -72,
-    "y": 373,
-    "zoom": 1.1098
+    "x": 241,
+    "y": 358,
+    "zoom": 1.1206
   }
 }
