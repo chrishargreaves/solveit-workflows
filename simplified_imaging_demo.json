@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "title": "Simplified imaging demo",
+  "description": "A simple demonstrator that describes removing a disk from a device and deciding if hardware or software write blockers will be used then storing in a forensic container format. ",
+  "nodes": [
+    {
+      "id": "V2S02D99",
+      "type": "technique",
+      "x": 177,
+      "y": 100,
+      "data": {
+        "techniqueId": "DFT-1012"
+      }
+    },
+    {
+      "id": "QwPjHJ5d",
+      "type": "decision",
+      "x": 471,
+      "y": -92,
+      "data": {
+        "question": "Hardware or software write blocker"
+      }
+    },
+    {
+      "id": "jbrm6H94",
+      "type": "technique",
+      "x": 624,
+      "y": 107,
+      "data": {
+        "techniqueId": "DFT-1013"
+      }
+    },
+    {
+      "id": "lLXiVLI8",
+      "type": "technique",
+      "x": 422,
+      "y": 316,
+      "data": {
+        "techniqueId": "DFT-1002"
+      }
+    },
+    {
+      "id": "m9QtSmR3",
+      "type": "technique",
+      "x": 416,
+      "y": 502,
+      "data": {
+        "techniqueId": "DFT-1025"
+      }
+    },
+    {
+      "id": "trdgsUsU",
+      "type": "technique",
+      "x": 410,
+      "y": -270,
+      "data": {
+        "techniqueId": "DFT-1112"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "mI5tiykv",
+      "source": "QwPjHJ5d",
+      "target": "V2S02D99",
+      "sourceHandle": "left-s",
+      "targetHandle": "top-t",
+      "label": "Hardware"
+    },
+    {
+      "id": "ucKGLhu4",
+      "source": "QwPjHJ5d",
+      "target": "jbrm6H94",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t",
+      "label": "Software"
+    },
+    {
+      "id": "isrzwPIO",
+      "source": "V2S02D99",
+      "target": "lLXiVLI8",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "pTvY0gbj",
+      "source": "jbrm6H94",
+      "target": "lLXiVLI8",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "Rjt9Rx9a",
+      "source": "trdgsUsU",
+      "target": "QwPjHJ5d",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "NAFJhIWO",
+      "source": "lLXiVLI8",
+      "target": "m9QtSmR3",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    }
+  ],
+  "selections": {},
+  "viewport": {
+    "x": -72,
+    "y": 373,
+    "zoom": 1.1098
+  }
+}
