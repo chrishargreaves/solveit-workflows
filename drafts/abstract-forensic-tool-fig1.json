@@ -1,0 +1,595 @@
+{
+  "version": 2,
+  "title": "Recreation of Abstract Forensic Tool (Figure 1)",
+  "description": "from Hargreaves, Nelson, Casey, 2024. An abstract model for digital forensic analysis tools-a foundation for systematic error mitigation analysis. Forensic Science International: Digital Investigation",
+  "nodes": [
+    {
+      "id": "fig000",
+      "type": "caseClass",
+      "x": 602,
+      "y": 10,
+      "data": {
+        "label": "Physical storage media image",
+        "classes": [
+          "https://ontology.solveit-df.org/solveit/observable/PhysicalImageContainer"
+        ]
+      }
+    },
+    {
+      "id": "fig001",
+      "type": "caseClass",
+      "x": 1969,
+      "y": 10,
+      "data": {
+        "label": "Non disk image (set of files, mobile extraction, cloud extraction)",
+        "classes": [
+          "https://ontology.solveit-df.org/solveit/observable/LogicalImageContainer",
+          "https://ontology.solveit-df.org/solveit/observable/DeviceGeneratedBackup"
+        ]
+      }
+    },
+    {
+      "id": "fig002",
+      "type": "technique",
+      "x": 602,
+      "y": 210,
+      "data": {
+        "techniqueId": "DFT-1043"
+      }
+    },
+    {
+      "id": "fig003",
+      "type": "technique",
+      "x": 602,
+      "y": 429,
+      "data": {
+        "techniqueId": "DFT-1042"
+      }
+    },
+    {
+      "id": "fig004",
+      "type": "technique",
+      "x": 602,
+      "y": 659,
+      "data": {
+        "techniqueId": "DFT-1059"
+      }
+    },
+    {
+      "id": "fig005",
+      "type": "technique",
+      "x": 148,
+      "y": 829,
+      "data": {
+        "techniqueId": "DFT-1060"
+      }
+    },
+    {
+      "id": "fig006",
+      "type": "technique",
+      "x": 1009,
+      "y": 880,
+      "data": {
+        "techniqueId": "DFT-1064"
+      }
+    },
+    {
+      "id": "fig007",
+      "type": "technique",
+      "x": 1820,
+      "y": 372,
+      "data": {
+        "techniqueId": "DFT-1170"
+      }
+    },
+    {
+      "id": "fig008",
+      "type": "technique",
+      "x": 2180,
+      "y": 372,
+      "data": {
+        "techniqueId": "DFT-1044"
+      }
+    },
+    {
+      "id": "fig009",
+      "type": "technique",
+      "x": 1016,
+      "y": 1249,
+      "data": {
+        "techniqueId": "DFT-1063"
+      }
+    },
+    {
+      "id": "fig00a",
+      "type": "placeholder",
+      "x": 899,
+      "y": 1612,
+      "data": {
+        "name": "File specific processing (EXIF, database parsing, email extraction, picture extraction, file format rendering, OCR)",
+        "tempId": "DFT-temp01"
+      }
+    },
+    {
+      "id": "fig00b",
+      "type": "technique",
+      "x": 1781,
+      "y": 1212,
+      "data": {
+        "techniqueId": "DFT-1186"
+      }
+    },
+    {
+      "id": "fig00c",
+      "type": "technique",
+      "x": 2340,
+      "y": 1212,
+      "data": {
+        "techniqueId": "DFT-1050"
+      }
+    },
+    {
+      "id": "fig00d",
+      "type": "technique",
+      "x": 1934,
+      "y": 1445,
+      "data": {
+        "techniqueId": "DFT-1058"
+      }
+    },
+    {
+      "id": "fig00e",
+      "type": "technique",
+      "x": 2264,
+      "y": 1689,
+      "data": {
+        "techniqueId": "DFT-1081"
+      }
+    },
+    {
+      "id": "fig00f",
+      "type": "placeholder",
+      "x": 2267,
+      "y": 1972,
+      "data": {
+        "name": "AI-based content flagging",
+        "tempId": "DFT-temp02"
+      }
+    },
+    {
+      "id": "fig00g",
+      "type": "placeholder",
+      "x": 2318,
+      "y": 2211,
+      "data": {
+        "name": "Automated result interpretation",
+        "tempId": "DFT-temp03"
+      }
+    },
+    {
+      "id": "fig00h",
+      "type": "technique",
+      "x": 53,
+      "y": 1962,
+      "data": {
+        "techniqueId": "DFT-1052"
+      }
+    },
+    {
+      "id": "fig00i",
+      "type": "technique",
+      "x": 53,
+      "y": 2215,
+      "data": {
+        "techniqueId": "DFT-1086"
+      }
+    },
+    {
+      "id": "fig00j",
+      "type": "placeholder",
+      "x": 393,
+      "y": 1962,
+      "data": {
+        "name": "Geolocation extraction",
+        "tempId": "DFT-temp04"
+      }
+    },
+    {
+      "id": "fig00k",
+      "type": "technique",
+      "x": 393,
+      "y": 2225,
+      "data": {
+        "techniqueId": "DFT-1115"
+      }
+    },
+    {
+      "id": "fig00l",
+      "type": "technique",
+      "x": 782,
+      "y": 1962,
+      "data": {
+        "techniqueId": "DFT-1121"
+      }
+    },
+    {
+      "id": "fig00m",
+      "type": "technique",
+      "x": 782,
+      "y": 2225,
+      "data": {
+        "techniqueId": "DFT-1124"
+      }
+    },
+    {
+      "id": "fig00n",
+      "type": "technique",
+      "x": 1169,
+      "y": 2071,
+      "data": {
+        "techniqueId": "DFT-1053"
+      }
+    },
+    {
+      "id": "fig00o",
+      "type": "technique",
+      "x": 1554,
+      "y": 2144,
+      "data": {
+        "techniqueId": "DFT-1055"
+      }
+    },
+    {
+      "id": "fig00p",
+      "type": "region",
+      "x": 40,
+      "y": -40,
+      "data": {
+        "label": "Physical Storage only",
+        "w": 1340,
+        "h": 1070,
+        "labelCorner": "tl",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "fig00q",
+      "type": "region",
+      "x": 1740,
+      "y": -40,
+      "data": {
+        "label": "File set only",
+        "w": 810,
+        "h": 570,
+        "color": "green"
+      }
+    },
+    {
+      "id": "fig00r",
+      "type": "region",
+      "x": 40,
+      "y": 1120,
+      "data": {
+        "label": "Core processing",
+        "w": 1530,
+        "h": 800,
+        "labelCorner": "tl",
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "fig00s",
+      "type": "region",
+      "x": 1650,
+      "y": 1120,
+      "data": {
+        "label": "Generic analysis processes",
+        "w": 1130,
+        "h": 1300,
+        "color": "pink"
+      }
+    },
+    {
+      "id": "fig00t",
+      "type": "region",
+      "x": 20,
+      "y": 1935,
+      "data": {
+        "label": "",
+        "w": 1820,
+        "h": 520,
+        "color": "grey"
+      }
+    },
+    {
+      "id": "note0",
+      "type": "note",
+      "x": 1180,
+      "y": -260,
+      "data": {
+        "text": "Recreation of the FSI:DI abstract processing-pipeline figure.\nReal SOLVE-IT techniques where a close match exists; placeholders otherwise.",
+        "color": "grey"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "fig00u",
+      "source": "fig000",
+      "target": "fig002",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(1)"
+    },
+    {
+      "id": "fig00v",
+      "source": "fig002",
+      "target": "fig003",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(2)"
+    },
+    {
+      "id": "fig00w",
+      "source": "fig003",
+      "target": "fig004",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(3)"
+    },
+    {
+      "id": "fig00x",
+      "source": "fig004",
+      "target": "fig005",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(4)"
+    },
+    {
+      "id": "fig00y",
+      "source": "fig004",
+      "target": "fig006",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t",
+      "label": "(5)"
+    },
+    {
+      "id": "fig00z",
+      "source": "fig005",
+      "target": "fig006",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(5a)"
+    },
+    {
+      "id": "fig010",
+      "source": "fig009",
+      "target": "fig006",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t",
+      "label": "(5b)"
+    },
+    {
+      "id": "fig011",
+      "source": "fig005",
+      "target": "fig009",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(6)"
+    },
+    {
+      "id": "fig012",
+      "source": "fig006",
+      "target": "fig00b",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t",
+      "label": "(7)"
+    },
+    {
+      "id": "fig013",
+      "source": "fig006",
+      "target": "fig009",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(8)"
+    },
+    {
+      "id": "fig014",
+      "source": "fig005",
+      "target": "fig00b",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t",
+      "label": "(9)"
+    },
+    {
+      "id": "fig015",
+      "source": "fig001",
+      "target": "fig007",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(10)"
+    },
+    {
+      "id": "fig016",
+      "source": "fig001",
+      "target": "fig008",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(11)"
+    },
+    {
+      "id": "fig017",
+      "source": "fig007",
+      "target": "fig009",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(12)"
+    },
+    {
+      "id": "fig018",
+      "source": "fig007",
+      "target": "fig00b",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(13)"
+    },
+    {
+      "id": "fig019",
+      "source": "fig008",
+      "target": "fig009",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(14)"
+    },
+    {
+      "id": "fig01a",
+      "source": "fig008",
+      "target": "fig00b",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(15)"
+    },
+    {
+      "id": "fig01b",
+      "source": "fig005",
+      "target": "fig00h",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(16)"
+    },
+    {
+      "id": "fig01c",
+      "source": "fig00b",
+      "target": "fig00c",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(17)"
+    },
+    {
+      "id": "fig01d",
+      "source": "fig009",
+      "target": "fig00d",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(18)"
+    },
+    {
+      "id": "fig01e",
+      "source": "fig009",
+      "target": "fig00a",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(19)"
+    },
+    {
+      "id": "fig01f",
+      "source": "fig00a",
+      "target": "fig00h",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(20)"
+    },
+    {
+      "id": "fig01g",
+      "source": "fig00h",
+      "target": "fig00i",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(21)"
+    },
+    {
+      "id": "fig01h",
+      "source": "fig00a",
+      "target": "fig00j",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(22)"
+    },
+    {
+      "id": "fig01i",
+      "source": "fig00j",
+      "target": "fig00k",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(23)"
+    },
+    {
+      "id": "fig01j",
+      "source": "fig00a",
+      "target": "fig00l",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(24)"
+    },
+    {
+      "id": "fig01k",
+      "source": "fig00l",
+      "target": "fig00m",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(25)"
+    },
+    {
+      "id": "fig01l",
+      "source": "fig00a",
+      "target": "fig00n",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(26)"
+    },
+    {
+      "id": "fig01m",
+      "source": "fig00l",
+      "target": "fig00n",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(27)"
+    },
+    {
+      "id": "fig01n",
+      "source": "fig00a",
+      "target": "fig00o",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t",
+      "label": "(27)"
+    },
+    {
+      "id": "fig01o",
+      "source": "fig00a",
+      "target": "fig00g",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(28)"
+    },
+    {
+      "id": "fig01p",
+      "source": "fig00a",
+      "target": "fig00f",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(29)"
+    },
+    {
+      "id": "fig01q",
+      "source": "fig00a",
+      "target": "fig00e",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(30)"
+    },
+    {
+      "id": "fig01r",
+      "source": "fig009",
+      "target": "fig00e",
+      "sourceHandle": "right-s",
+      "targetHandle": "left-t",
+      "label": "(31)"
+    }
+  ],
+  "selections": {},
+  "viewport": {
+    "x": 20,
+    "y": 20,
+    "zoom": 0.5
+  }
+}
