@@ -6,8 +6,8 @@
     {
       "id": "fig000",
       "type": "caseClass",
-      "x": 602,
-      "y": 10,
+      "x": 604,
+      "y": 15,
       "data": {
         "label": "Physical storage media image",
         "classes": [
@@ -18,8 +18,8 @@
     {
       "id": "fig001",
       "type": "caseClass",
-      "x": 1969,
-      "y": 10,
+      "x": 1327,
+      "y": -12,
       "data": {
         "label": "Non disk image (set of files, mobile extraction, cloud extraction)",
         "classes": [
@@ -31,8 +31,8 @@
     {
       "id": "fig002",
       "type": "technique",
-      "x": 602,
-      "y": 210,
+      "x": 610,
+      "y": 168,
       "data": {
         "techniqueId": "DFT-1043"
       }
@@ -40,8 +40,8 @@
     {
       "id": "fig003",
       "type": "technique",
-      "x": 602,
-      "y": 429,
+      "x": 612,
+      "y": 322,
       "data": {
         "techniqueId": "DFT-1042"
       }
@@ -49,8 +49,8 @@
     {
       "id": "fig004",
       "type": "technique",
-      "x": 602,
-      "y": 659,
+      "x": 634,
+      "y": 495,
       "data": {
         "techniqueId": "DFT-1059"
       }
@@ -58,8 +58,8 @@
     {
       "id": "fig005",
       "type": "technique",
-      "x": 148,
-      "y": 829,
+      "x": 388,
+      "y": 633,
       "data": {
         "techniqueId": "DFT-1060"
       }
@@ -67,8 +67,8 @@
     {
       "id": "fig006",
       "type": "technique",
-      "x": 1009,
-      "y": 880,
+      "x": 733,
+      "y": 742,
       "data": {
         "techniqueId": "DFT-1064"
       }
@@ -76,8 +76,8 @@
     {
       "id": "fig007",
       "type": "technique",
-      "x": 1820,
-      "y": 372,
+      "x": 1207,
+      "y": 282,
       "data": {
         "techniqueId": "DFT-1170"
       }
@@ -85,8 +85,8 @@
     {
       "id": "fig008",
       "type": "technique",
-      "x": 2180,
-      "y": 372,
+      "x": 1520,
+      "y": 282,
       "data": {
         "techniqueId": "DFT-1044"
       }
@@ -94,8 +94,8 @@
     {
       "id": "fig009",
       "type": "technique",
-      "x": 1016,
-      "y": 1249,
+      "x": 752,
+      "y": 1055,
       "data": {
         "techniqueId": "DFT-1063"
       }
@@ -103,8 +103,8 @@
     {
       "id": "fig00a",
       "type": "placeholder",
-      "x": 899,
-      "y": 1612,
+      "x": 733,
+      "y": 1196,
       "data": {
         "name": "File specific processing (EXIF, database parsing, email extraction, picture extraction, file format rendering, OCR)",
         "tempId": "DFT-temp01"
@@ -113,8 +113,8 @@
     {
       "id": "fig00b",
       "type": "technique",
-      "x": 1781,
-      "y": 1212,
+      "x": 1232,
+      "y": 1021,
       "data": {
         "techniqueId": "DFT-1186"
       }
@@ -122,8 +122,8 @@
     {
       "id": "fig00c",
       "type": "technique",
-      "x": 2340,
-      "y": 1212,
+      "x": 1532,
+      "y": 1005,
       "data": {
         "techniqueId": "DFT-1050"
       }
@@ -131,8 +131,8 @@
     {
       "id": "fig00d",
       "type": "technique",
-      "x": 1934,
-      "y": 1445,
+      "x": 1406,
+      "y": 1130,
       "data": {
         "techniqueId": "DFT-1058"
       }
@@ -140,8 +140,8 @@
     {
       "id": "fig00e",
       "type": "technique",
-      "x": 2264,
-      "y": 1689,
+      "x": 1398,
+      "y": 1248,
       "data": {
         "techniqueId": "DFT-1081"
       }
@@ -149,8 +149,8 @@
     {
       "id": "fig00f",
       "type": "placeholder",
-      "x": 2267,
-      "y": 1972,
+      "x": 1390,
+      "y": 1369,
       "data": {
         "name": "AI-based content flagging",
         "tempId": "DFT-temp02"
@@ -159,8 +159,8 @@
     {
       "id": "fig00g",
       "type": "placeholder",
-      "x": 2318,
-      "y": 2211,
+      "x": 1388,
+      "y": 1546,
       "data": {
         "name": "Automated result interpretation",
         "tempId": "DFT-temp03"
@@ -169,8 +169,8 @@
     {
       "id": "fig00h",
       "type": "technique",
-      "x": 53,
-      "y": 1962,
+      "x": 381,
+      "y": 1784,
       "data": {
         "techniqueId": "DFT-1052"
       }
@@ -178,8 +178,8 @@
     {
       "id": "fig00i",
       "type": "technique",
-      "x": 53,
-      "y": 2215,
+      "x": 373,
+      "y": 1965,
       "data": {
         "techniqueId": "DFT-1086"
       }
@@ -187,8 +187,8 @@
     {
       "id": "fig00j",
       "type": "placeholder",
-      "x": 393,
-      "y": 1962,
+      "x": 598,
+      "y": 1782,
       "data": {
         "name": "Geolocation extraction",
         "tempId": "DFT-temp04"
@@ -197,8 +197,8 @@
     {
       "id": "fig00k",
       "type": "technique",
-      "x": 393,
-      "y": 2225,
+      "x": 598,
+      "y": 1969,
       "data": {
         "techniqueId": "DFT-1115"
       }
@@ -206,8 +206,8 @@
     {
       "id": "fig00l",
       "type": "technique",
-      "x": 782,
-      "y": 1962,
+      "x": 858,
+      "y": 1786,
       "data": {
         "techniqueId": "DFT-1121"
       }
@@ -215,8 +215,8 @@
     {
       "id": "fig00m",
       "type": "technique",
-      "x": 782,
-      "y": 2225,
+      "x": 887,
+      "y": 1966,
       "data": {
         "techniqueId": "DFT-1124"
       }
@@ -224,8 +224,8 @@
     {
       "id": "fig00n",
       "type": "technique",
-      "x": 1169,
-      "y": 2071,
+      "x": 1220,
+      "y": 1920,
       "data": {
         "techniqueId": "DFT-1053"
       }
@@ -233,8 +233,8 @@
     {
       "id": "fig00o",
       "type": "technique",
-      "x": 1554,
-      "y": 2144,
+      "x": 1522,
+      "y": 1942,
       "data": {
         "techniqueId": "DFT-1055"
       }
@@ -242,12 +242,12 @@
     {
       "id": "fig00p",
       "type": "region",
-      "x": 40,
+      "x": 353,
       "y": -40,
       "data": {
         "label": "Physical Storage only",
-        "w": 1340,
-        "h": 1070,
+        "w": 763,
+        "h": 906,
         "labelCorner": "tl",
         "color": "blue"
       }
@@ -255,24 +255,24 @@
     {
       "id": "fig00q",
       "type": "region",
-      "x": 1740,
+      "x": 1145,
       "y": -40,
       "data": {
         "label": "File set only",
-        "w": 810,
-        "h": 570,
+        "w": 666,
+        "h": 903,
         "color": "green"
       }
     },
     {
       "id": "fig00r",
       "type": "region",
-      "x": 40,
-      "y": 1120,
+      "x": 349,
+      "y": 894,
       "data": {
         "label": "Core processing",
-        "w": 1530,
-        "h": 800,
+        "w": 765,
+        "h": 828,
         "labelCorner": "tl",
         "color": "yellow"
       }
@@ -280,32 +280,32 @@
     {
       "id": "fig00s",
       "type": "region",
-      "x": 1650,
-      "y": 1120,
+      "x": 1139,
+      "y": 894,
       "data": {
         "label": "Generic analysis processes",
-        "w": 1130,
-        "h": 1300,
+        "w": 676,
+        "h": 1208,
         "color": "pink"
       }
     },
     {
       "id": "fig00t",
       "type": "region",
-      "x": 20,
-      "y": 1935,
+      "x": 350,
+      "y": 1739,
       "data": {
         "label": "",
-        "w": 1820,
-        "h": 520,
-        "color": "grey"
+        "w": 767,
+        "h": 364,
+        "color": "pink"
       }
     },
     {
       "id": "note0",
       "type": "note",
-      "x": 1180,
-      "y": -260,
+      "x": 947,
+      "y": -183,
       "data": {
         "text": "Recreation of the FSI:DI abstract processing-pipeline figure.\nReal SOLVE-IT techniques where a close match exists; placeholders otherwise.",
         "color": "grey"
@@ -588,8 +588,8 @@
   ],
   "selections": {},
   "viewport": {
-    "x": 20,
-    "y": 20,
+    "x": 176,
+    "y": 41,
     "zoom": 0.5
   }
 }
