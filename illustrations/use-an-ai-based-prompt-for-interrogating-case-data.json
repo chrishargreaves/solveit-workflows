@@ -1,0 +1,1091 @@
+{
+  "version": 2,
+  "title": "Use an AI-based prompt for interrogating case data",
+  "nodes": [
+    {
+      "id": "r_ai",
+      "type": "region",
+      "x": 865,
+      "y": 12,
+      "data": {
+        "label": "AI layer",
+        "w": 594,
+        "h": 264,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "r_dyn",
+      "type": "region",
+      "x": 551,
+      "y": 370,
+      "data": {
+        "label": "Dynamic search techniques",
+        "w": 1345,
+        "h": 310,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "r_agg",
+      "type": "region",
+      "x": 856,
+      "y": 759,
+      "data": {
+        "label": "Artefact aggregation",
+        "w": 693,
+        "h": 218,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "r_app",
+      "type": "region",
+      "x": 2287,
+      "y": 944,
+      "data": {
+        "label": "App artefacts",
+        "w": 1787,
+        "h": 990,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "r_os",
+      "type": "region",
+      "x": 1099,
+      "y": 1340,
+      "data": {
+        "label": "OS artefacts",
+        "w": 1119,
+        "h": 586,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "r_gen",
+      "type": "region",
+      "x": 31,
+      "y": 1348,
+      "data": {
+        "label": "General",
+        "w": 957,
+        "h": 586,
+        "labelCorner": "tl"
+      }
+    },
+    {
+      "id": "temp01",
+      "type": "placeholder",
+      "x": 1031,
+      "y": 63,
+      "data": {
+        "tempId": "DFT-temp01",
+        "name": "Use an AI-based prompt for interrogating case data"
+      }
+    },
+    {
+      "id": "f_ai",
+      "type": "fork",
+      "x": 1112,
+      "y": 239,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "d_kw_idx",
+      "type": "technique",
+      "x": 589,
+      "y": 513,
+      "data": {
+        "techniqueId": "DFT-1049",
+        "methods": [
+          "DFT-1124"
+        ]
+      }
+    },
+    {
+      "id": "d_kw_ext",
+      "type": "technique",
+      "x": 827,
+      "y": 495,
+      "data": {
+        "techniqueId": "DFT-1049",
+        "methods": [
+          "DFT-1151"
+        ]
+      }
+    },
+    {
+      "id": "d_tl_filt",
+      "type": "technique",
+      "x": 1117,
+      "y": 497,
+      "data": {
+        "techniqueId": "DFT-1086",
+        "methods": [
+          "DFT-1182"
+        ]
+      }
+    },
+    {
+      "id": "d_path",
+      "type": "technique",
+      "x": 1400,
+      "y": 505,
+      "data": {
+        "techniqueId": "DFT-1118"
+      }
+    },
+    {
+      "id": "temp03",
+      "type": "placeholder",
+      "x": 1638,
+      "y": 495,
+      "data": {
+        "tempId": "DFT-temp03",
+        "name": "Filter artefact set by property"
+      }
+    },
+    {
+      "id": "temp02",
+      "type": "placeholder",
+      "x": 1086,
+      "y": 810,
+      "data": {
+        "tempId": "DFT-temp02",
+        "name": "Aggregate artifact data into a searchable database"
+      }
+    },
+    {
+      "id": "a1109",
+      "type": "technique",
+      "x": 2352,
+      "y": 1076,
+      "data": {
+        "techniqueId": "DFT-1109"
+      }
+    },
+    {
+      "id": "a1133",
+      "type": "technique",
+      "x": 2673,
+      "y": 1048,
+      "data": {
+        "techniqueId": "DFT-1133"
+      }
+    },
+    {
+      "id": "a1070",
+      "type": "technique",
+      "x": 2990,
+      "y": 1033,
+      "data": {
+        "techniqueId": "DFT-1070"
+      }
+    },
+    {
+      "id": "a1072",
+      "type": "technique",
+      "x": 2348,
+      "y": 1260,
+      "data": {
+        "techniqueId": "DFT-1072"
+      }
+    },
+    {
+      "id": "a1108",
+      "type": "technique",
+      "x": 2625,
+      "y": 1274,
+      "data": {
+        "techniqueId": "DFT-1108"
+      }
+    },
+    {
+      "id": "a1077",
+      "type": "technique",
+      "x": 2954,
+      "y": 1267,
+      "data": {
+        "techniqueId": "DFT-1077"
+      }
+    },
+    {
+      "id": "a1069",
+      "type": "technique",
+      "x": 2323,
+      "y": 1434,
+      "data": {
+        "techniqueId": "DFT-1069"
+      }
+    },
+    {
+      "id": "a1074",
+      "type": "technique",
+      "x": 2601,
+      "y": 1489,
+      "data": {
+        "techniqueId": "DFT-1074"
+      }
+    },
+    {
+      "id": "a1107",
+      "type": "technique",
+      "x": 2949,
+      "y": 1447,
+      "data": {
+        "techniqueId": "DFT-1107"
+      }
+    },
+    {
+      "id": "a1075",
+      "type": "technique",
+      "x": 3375,
+      "y": 1352,
+      "data": {
+        "techniqueId": "DFT-1075"
+      }
+    },
+    {
+      "id": "a1078",
+      "type": "technique",
+      "x": 2770,
+      "y": 1624,
+      "data": {
+        "techniqueId": "DFT-1078"
+      }
+    },
+    {
+      "id": "a1177",
+      "type": "technique",
+      "x": 3316,
+      "y": 1642,
+      "data": {
+        "techniqueId": "DFT-1177"
+      }
+    },
+    {
+      "id": "a1073",
+      "type": "technique",
+      "x": 2313,
+      "y": 1620,
+      "data": {
+        "techniqueId": "DFT-1073"
+      }
+    },
+    {
+      "id": "a1120",
+      "type": "technique",
+      "x": 3635,
+      "y": 1708,
+      "data": {
+        "techniqueId": "DFT-1120"
+      }
+    },
+    {
+      "id": "f_app",
+      "type": "fork",
+      "x": 2562,
+      "y": 1766,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "a1169",
+      "type": "technique",
+      "x": 2419,
+      "y": 1850,
+      "data": {
+        "techniqueId": "DFT-1169"
+      }
+    },
+    {
+      "id": "o1180",
+      "type": "technique",
+      "x": 1407,
+      "y": 1431,
+      "data": {
+        "techniqueId": "DFT-1180"
+      }
+    },
+    {
+      "id": "o1149",
+      "type": "technique",
+      "x": 1165,
+      "y": 1487,
+      "data": {
+        "techniqueId": "DFT-1149"
+      }
+    },
+    {
+      "id": "o1098",
+      "type": "technique",
+      "x": 1442,
+      "y": 1530,
+      "data": {
+        "techniqueId": "DFT-1098"
+      }
+    },
+    {
+      "id": "o1097",
+      "type": "technique",
+      "x": 1725,
+      "y": 1475,
+      "data": {
+        "techniqueId": "DFT-1097"
+      }
+    },
+    {
+      "id": "o1096",
+      "type": "technique",
+      "x": 1158,
+      "y": 1619,
+      "data": {
+        "techniqueId": "DFT-1096"
+      }
+    },
+    {
+      "id": "o1190",
+      "type": "technique",
+      "x": 1624,
+      "y": 1638,
+      "data": {
+        "techniqueId": "DFT-1190"
+      }
+    },
+    {
+      "id": "o1116",
+      "type": "technique",
+      "x": 1927,
+      "y": 1648,
+      "data": {
+        "techniqueId": "DFT-1116"
+      }
+    },
+    {
+      "id": "o1066",
+      "type": "technique",
+      "x": 1338,
+      "y": 1714,
+      "data": {
+        "techniqueId": "DFT-1066"
+      }
+    },
+    {
+      "id": "o1065",
+      "type": "technique",
+      "x": 1180,
+      "y": 1803,
+      "data": {
+        "techniqueId": "DFT-1065"
+      }
+    },
+    {
+      "id": "o1068",
+      "type": "technique",
+      "x": 1536,
+      "y": 1812,
+      "data": {
+        "techniqueId": "DFT-1068"
+      }
+    },
+    {
+      "id": "o1185",
+      "type": "technique",
+      "x": 1830,
+      "y": 1830,
+      "data": {
+        "techniqueId": "DFT-1185"
+      }
+    },
+    {
+      "id": "g1121",
+      "type": "technique",
+      "x": 64,
+      "y": 1612,
+      "data": {
+        "techniqueId": "DFT-1121"
+      }
+    },
+    {
+      "id": "g1052",
+      "type": "technique",
+      "x": 725,
+      "y": 1676,
+      "data": {
+        "techniqueId": "DFT-1052"
+      }
+    },
+    {
+      "id": "g1050",
+      "type": "technique",
+      "x": 359,
+      "y": 1599,
+      "data": {
+        "techniqueId": "DFT-1050"
+      }
+    },
+    {
+      "id": "g1184",
+      "type": "technique",
+      "x": 676,
+      "y": 1474,
+      "data": {
+        "techniqueId": "DFT-1086",
+        "methods": [
+          "DFT-1184"
+        ]
+      }
+    },
+    {
+      "id": "b1043",
+      "type": "technique",
+      "x": 1370,
+      "y": 2661,
+      "data": {
+        "techniqueId": "DFT-1043"
+      }
+    },
+    {
+      "id": "f_bottom",
+      "type": "fork",
+      "x": 1449,
+      "y": 2566,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "b1059",
+      "type": "technique",
+      "x": 1374,
+      "y": 2396,
+      "data": {
+        "techniqueId": "DFT-1059"
+      }
+    },
+    {
+      "id": "b1168",
+      "type": "technique",
+      "x": 1381,
+      "y": 2259,
+      "data": {
+        "techniqueId": "DFT-1168"
+      }
+    },
+    {
+      "id": "b1060",
+      "type": "technique",
+      "x": 1345,
+      "y": 2122,
+      "data": {
+        "techniqueId": "DFT-1060"
+      }
+    },
+    {
+      "id": "b1053",
+      "type": "technique",
+      "x": 839,
+      "y": 2070,
+      "data": {
+        "techniqueId": "DFT-1053"
+      }
+    },
+    {
+      "id": "f_mid",
+      "type": "fork",
+      "x": 1422,
+      "y": 2041,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "n_part",
+      "type": "note",
+      "x": 1587,
+      "y": 2356,
+      "data": {
+        "text": "This assumes there are partitions, volumes can be directly accessed if there is no partition scheme (e.g. USB device)"
+      }
+    },
+    {
+      "id": "n_model",
+      "type": "note",
+      "x": 1097,
+      "y": 2749,
+      "data": {
+        "text": "This model is just for a physical disk image as a data source."
+      }
+    },
+    {
+      "id": "vu7tP3b6",
+      "type": "caseClass",
+      "x": 1058,
+      "y": -128,
+      "data": {
+        "label": "Examiner",
+        "classes": [
+          "https://ontology.unifiedcyberontology.org/uco/identity/Person"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e000",
+      "source": "b1043",
+      "target": "f_bottom",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e001",
+      "source": "f_bottom",
+      "target": "b1059",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e002",
+      "source": "f_bottom",
+      "target": "b1053",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e003",
+      "source": "b1059",
+      "target": "b1168",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e004",
+      "source": "b1168",
+      "target": "b1060",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e005",
+      "source": "b1060",
+      "target": "f_mid",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e006",
+      "source": "f_mid",
+      "target": "g1121",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e007",
+      "source": "f_mid",
+      "target": "g1052",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e008",
+      "source": "f_mid",
+      "target": "g1050",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e009",
+      "source": "g1052",
+      "target": "g1184",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e010",
+      "source": "f_mid",
+      "target": "o1180",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e011",
+      "source": "f_mid",
+      "target": "o1149",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e012",
+      "source": "f_mid",
+      "target": "o1098",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e013",
+      "source": "f_mid",
+      "target": "o1097",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e014",
+      "source": "f_mid",
+      "target": "o1096",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e015",
+      "source": "f_mid",
+      "target": "o1190",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e016",
+      "source": "f_mid",
+      "target": "o1116",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e017",
+      "source": "f_mid",
+      "target": "o1066",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e018",
+      "source": "f_mid",
+      "target": "o1065",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e019",
+      "source": "f_mid",
+      "target": "o1068",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e020",
+      "source": "f_mid",
+      "target": "o1185",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e021",
+      "source": "f_mid",
+      "target": "a1169",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e022",
+      "source": "a1169",
+      "target": "f_app",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e023",
+      "source": "f_app",
+      "target": "a1109",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e024",
+      "source": "f_app",
+      "target": "a1133",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e025",
+      "source": "f_app",
+      "target": "a1070",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e026",
+      "source": "f_app",
+      "target": "a1072",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e027",
+      "source": "f_app",
+      "target": "a1108",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e028",
+      "source": "f_app",
+      "target": "a1077",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e029",
+      "source": "f_app",
+      "target": "a1069",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e030",
+      "source": "f_app",
+      "target": "a1074",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e031",
+      "source": "f_app",
+      "target": "a1107",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e032",
+      "source": "f_app",
+      "target": "a1075",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e033",
+      "source": "f_app",
+      "target": "a1078",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e034",
+      "source": "f_app",
+      "target": "a1177",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e035",
+      "source": "f_app",
+      "target": "a1073",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e036",
+      "source": "f_app",
+      "target": "a1120",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e037",
+      "source": "g1121",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e038",
+      "source": "g1184",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e039",
+      "source": "g1050",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e040",
+      "source": "b1053",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e041",
+      "source": "o1180",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e042",
+      "source": "o1149",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e043",
+      "source": "o1098",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e044",
+      "source": "o1097",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e045",
+      "source": "o1096",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e046",
+      "source": "o1190",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e047",
+      "source": "o1116",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e048",
+      "source": "o1066",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e049",
+      "source": "o1065",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e050",
+      "source": "o1068",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e051",
+      "source": "o1185",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e052",
+      "source": "a1109",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e053",
+      "source": "a1133",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e054",
+      "source": "a1070",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e055",
+      "source": "a1072",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e056",
+      "source": "a1108",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e057",
+      "source": "a1077",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e058",
+      "source": "a1069",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e059",
+      "source": "a1074",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e060",
+      "source": "a1107",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e061",
+      "source": "a1075",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e062",
+      "source": "a1078",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e063",
+      "source": "a1177",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e064",
+      "source": "a1073",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e065",
+      "source": "a1120",
+      "target": "temp02",
+      "sourceHandle": "top-s",
+      "targetHandle": "bottom-t"
+    },
+    {
+      "id": "e066",
+      "source": "temp01",
+      "target": "f_ai",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e067",
+      "source": "f_ai",
+      "target": "d_kw_idx",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e068",
+      "source": "d_kw_idx",
+      "target": "temp02",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e069",
+      "source": "f_ai",
+      "target": "d_kw_ext",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e070",
+      "source": "d_kw_ext",
+      "target": "temp02",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e071",
+      "source": "f_ai",
+      "target": "d_tl_filt",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e072",
+      "source": "d_tl_filt",
+      "target": "temp02",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e073",
+      "source": "f_ai",
+      "target": "d_path",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e074",
+      "source": "d_path",
+      "target": "temp02",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e075",
+      "source": "f_ai",
+      "target": "temp03",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e076",
+      "source": "temp03",
+      "target": "temp02",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "yd3EcEqz",
+      "source": "vu7tP3b6",
+      "target": "temp01",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    }
+  ],
+  "selections": {},
+  "viewport": {
+    "x": -200,
+    "y": 142,
+    "zoom": 0.5465
+  }
+}
