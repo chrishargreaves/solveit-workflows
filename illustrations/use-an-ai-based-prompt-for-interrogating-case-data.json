@@ -76,12 +76,11 @@
     },
     {
       "id": "temp01",
-      "type": "placeholder",
+      "type": "technique",
       "x": 1031,
       "y": 63,
       "data": {
-        "tempId": "DFT-temp01",
-        "name": "Use an AI-based prompt for interrogating case data"
+        "techniqueId": "DFT-1203"
       }
     },
     {
