@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "title": "Disk image hash verification (SOLVE-IT model)",
+  "description": "Verifying a stored forensic image against a hash recorded when it was written, from SOLVE-IT issue #462. This is the process carried out at any point after imaging has finished.",
+  "nodes": [
+    {
+      "id": "t_read_bs",
+      "type": "technique",
+      "x": -588,
+      "y": 16,
+      "data": {
+        "techniqueId": "DFT-1043",
+        "label": "Read the bitstream from the container"
+      }
+    },
+    {
+      "id": "t_hash",
+      "type": "technique",
+      "x": -589,
+      "y": 218,
+      "data": {
+        "techniqueId": "DFT-1199",
+        "label": "Recompute the hash over the stored data"
+      }
+    },
+    {
+      "id": "t_read_meta",
+      "type": "technique",
+      "x": -286,
+      "y": 17,
+      "data": {
+        "techniqueId": "DFT-1193",
+        "label": "Read the stored hash from the container"
+      }
+    },
+    {
+      "id": "t_verify",
+      "type": "technique",
+      "x": -464,
+      "y": 456,
+      "data": {
+        "techniqueId": "DFT-1204",
+        "label": "Hash of stored data vs recorded hash"
+      }
+    },
+    {
+      "id": "59XwEMff",
+      "type": "caseClass",
+      "x": -455,
+      "y": -251,
+      "data": {
+        "label": "Data artifact",
+        "classes": [
+          "https://ontology.solveit-df.org/solveit/observable/ForensicImageContainer"
+        ]
+      }
+    },
+    {
+      "id": "G1BkZiH2",
+      "type": "fork",
+      "x": -368,
+      "y": -93,
+      "data": {
+        "mode": "fork"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "b3GgKD28",
+      "source": "59XwEMff",
+      "target": "G1BkZiH2",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "GEQuQdkK",
+      "source": "G1BkZiH2",
+      "target": "t_read_bs",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "k3tcYaHp",
+      "source": "G1BkZiH2",
+      "target": "t_read_meta",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "lQl3YoAC",
+      "source": "t_read_bs",
+      "target": "t_hash",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "QjWFuinR",
+      "source": "t_hash",
+      "target": "t_verify",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "DSe9O08w",
+      "source": "t_read_meta",
+      "target": "t_verify",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    }
+  ],
+  "selections": {},
+  "viewport": {
+    "x": 903,
+    "y": 269,
+    "zoom": 0.8863
+  }
+}

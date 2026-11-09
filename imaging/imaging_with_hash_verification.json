@@ -1,0 +1,317 @@
+{
+  "version": 2,
+  "title": "Imaging - with hash verification (SOLVE-IT model)",
+  "description": "Hash verification during and after imaging, from SOLVE-IT issue #462. Separates the comparison made while imaging (DFT-1042) from the comparison made later against a stored hash (DFT-1204). Laid out top to bottom so joining classes are legible.",
+  "nodes": [
+    {
+      "id": "t_wb",
+      "type": "technique",
+      "x": 218,
+      "y": -35,
+      "data": {
+        "techniqueId": "DFT-1012",
+        "label": "Write block the source device"
+      }
+    },
+    {
+      "id": "t_copy",
+      "type": "technique",
+      "x": 216,
+      "y": 158,
+      "data": {
+        "techniqueId": "DFT-1002",
+        "label": "Read sectors from the source device"
+      }
+    },
+    {
+      "id": "t_hash_src",
+      "type": "technique",
+      "x": -63,
+      "y": 409,
+      "data": {
+        "techniqueId": "DFT-1198",
+        "label": "Hash the bitstream as it is read"
+      }
+    },
+    {
+      "id": "t_store",
+      "type": "technique",
+      "x": 369,
+      "y": 434,
+      "data": {
+        "techniqueId": "DFT-1025",
+        "label": "Write to a forensic image container"
+      }
+    },
+    {
+      "id": "t_hash_stored_1",
+      "type": "technique",
+      "x": 217,
+      "y": 994,
+      "data": {
+        "techniqueId": "DFT-1199",
+        "label": "Hash the data as stored, during imaging"
+      }
+    },
+    {
+      "id": "t_verify_imaging",
+      "type": "technique",
+      "x": -67,
+      "y": 1164,
+      "data": {
+        "techniqueId": "DFT-1042",
+        "label": "Source hash vs hash of stored data"
+      }
+    },
+    {
+      "id": "t_read_bs",
+      "type": "technique",
+      "x": 1017,
+      "y": 1059,
+      "data": {
+        "techniqueId": "DFT-1043",
+        "label": "Re-read the bitstream from the container"
+      }
+    },
+    {
+      "id": "t_hash_stored_2",
+      "type": "technique",
+      "x": 1018,
+      "y": 1253,
+      "data": {
+        "techniqueId": "DFT-1199",
+        "label": "Hash the data as stored, on re-reading"
+      }
+    },
+    {
+      "id": "t_read_meta",
+      "type": "technique",
+      "x": 712,
+      "y": 1055,
+      "data": {
+        "techniqueId": "DFT-1193",
+        "label": "Read the stored hash from the container"
+      }
+    },
+    {
+      "id": "t_verify_stored",
+      "type": "technique",
+      "x": 875,
+      "y": 1429,
+      "data": {
+        "techniqueId": "DFT-1204",
+        "label": "Hash of stored data vs recorded hash"
+      }
+    },
+    {
+      "id": "r_imaging",
+      "type": "region",
+      "x": -85,
+      "y": -83,
+      "data": {
+        "label": "During imaging",
+        "w": 722,
+        "h": 1410,
+        "labelCorner": "tl",
+        "color": "blue"
+      }
+    },
+    {
+      "id": "r_after",
+      "type": "region",
+      "x": 672,
+      "y": 763,
+      "data": {
+        "label": "After imaging — re-reading what was stored",
+        "w": 651,
+        "h": 808,
+        "labelCorner": "tl",
+        "color": "grey"
+      }
+    },
+    {
+      "id": "n_imaging",
+      "type": "note",
+      "x": 202,
+      "y": 1186,
+      "data": {
+        "text": "DFT-1042 compares two hashes computed during imaging: one over the bitstream read from the source device, one over the same data as written to the container.",
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "soWaAYW3",
+      "type": "fork",
+      "x": 296,
+      "y": 322,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "0MMDsZBh",
+      "type": "fork",
+      "x": 459,
+      "y": 740,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "G0c9NlO4",
+      "type": "technique",
+      "x": 153,
+      "y": 615,
+      "data": {
+        "techniqueId": "DFT-1208",
+        "label": "Record the acquisition hash in the container"
+      }
+    },
+    {
+      "id": "bZOZUIAO",
+      "type": "fork",
+      "x": 16,
+      "y": 580,
+      "data": {
+        "mode": "fork"
+      }
+    },
+    {
+      "id": "jfVOfofK",
+      "type": "technique",
+      "x": 218,
+      "y": 832,
+      "data": {
+        "techniqueId": "DFT-1043",
+        "label": "Read back the bitstream from the container"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "t_wb",
+      "target": "t_copy",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e8",
+      "source": "t_hash_stored_1",
+      "target": "t_verify_imaging",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e9",
+      "source": "t_read_bs",
+      "target": "t_hash_stored_2",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e10",
+      "source": "t_hash_stored_2",
+      "target": "t_verify_stored",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "e11",
+      "source": "t_read_meta",
+      "target": "t_verify_stored",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "CQKevYLD",
+      "source": "t_copy",
+      "target": "soWaAYW3",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "30VDQr4Z",
+      "source": "soWaAYW3",
+      "target": "t_hash_src",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "Y9JOsrEH",
+      "source": "soWaAYW3",
+      "target": "t_store",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "6lzMI8jE",
+      "source": "0MMDsZBh",
+      "target": "t_read_bs",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "YSZnkkbO",
+      "source": "0MMDsZBh",
+      "target": "t_read_meta",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "VWzsrsDK",
+      "source": "G0c9NlO4",
+      "target": "0MMDsZBh",
+      "sourceHandle": "right-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "xaJY0z1Z",
+      "source": "t_hash_src",
+      "target": "bZOZUIAO",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "hWUtWaOP",
+      "source": "bZOZUIAO",
+      "target": "t_verify_imaging",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "VQ3Zcejo",
+      "source": "t_store",
+      "target": "0MMDsZBh",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "AJiGyr8n",
+      "source": "jfVOfofK",
+      "target": "t_hash_stored_1",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "PPPFxEOE",
+      "source": "0MMDsZBh",
+      "target": "jfVOfofK",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "top-t"
+    },
+    {
+      "id": "EOBtgPyf",
+      "source": "bZOZUIAO",
+      "target": "G0c9NlO4",
+      "sourceHandle": "bottom-s",
+      "targetHandle": "left-t"
+    }
+  ],
+  "selections": {},
+  "viewport": {
+    "x": 229,
+    "y": -303,
+    "zoom": 0.6404
+  }
+}

@@ -28,6 +28,18 @@ bigger systems.
 | [`use-an-ai-based-prompt-for-interrogating-case-data.json`](illustrations/use-an-ai-based-prompt-for-interrogating-case-data.json) | The same architecture with an AI layer added on top, showing which underlying techniques an AI-driven query of the case data depends on. | [Open](https://workflows.hargs.co.uk/#fetch=https://raw.githubusercontent.com/chrishargreaves/solveit-workflows/main/illustrations/use-an-ai-based-prompt-for-interrogating-case-data.json) |
 
 
+## Imaging
+
+Workflows for the acquisition of a disk image and the checks that show the stored image
+matches what was read from the source device. They model the separation of hash
+verification techniques proposed in SOLVE-IT issue #462: DFT-1042 compares a hash of the
+data read from the source with a hash of the data as stored, while DFT-1204 compares a hash
+of the stored data with a hash recorded when the image was written.
+
+| Workflow | What it covers | |
+|---|---|---|
+| [`imaging_with_hash_verification.json`](imaging/imaging_with_hash_verification.json) | Write blocking and reading the source device, writing the image to a forensic container and recording the acquisition hash in it (DFT-1208), then hash verification both during imaging (DFT-1042) and afterwards against the recorded hash (DFT-1204). | [Open](https://workflows.hargs.co.uk/#fetch=https://raw.githubusercontent.com/chrishargreaves/solveit-workflows/main/imaging/imaging_with_hash_verification.json) |
+| [`image_hash_verification.json`](imaging/image_hash_verification.json) | Verifying a stored forensic image container against the hash recorded in it, at any point after imaging has finished (DFT-1204). | [Open](https://workflows.hargs.co.uk/#fetch=https://raw.githubusercontent.com/chrishargreaves/solveit-workflows/main/imaging/image_hash_verification.json) |
 
 ## Demonstrators
 
